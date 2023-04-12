@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Твой возраст на всех планетах</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="constants.js"></script>
+    <script src="birthdays.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <h1>Чтобы узнать свой возраст на разных планетах,<br/>укажи дату рождения на Земле</h1>
+    <form>
+            <label>Дата рождения</label>
+            <input type="date" id="birthdate">
+        <button class="button" onclick="calculate(event)">РАССЧИТАТЬ</button>
+    </form>
+    
+    <div id="unhide">
+    <p class='result'>Вот твой возраст!</p>
+    <table id="bdayList">
+    </table>
+    <p style="margin-top: 2em;">Видео по теме:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a-tgrzDsqQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Упоротый Звездочёт, <script type="text/javascript">document.write(new Date().getFullYear())</script></p>
+</div>
+</main>
+</body>
+</html>
